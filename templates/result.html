@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Result</title>
+</head>
+<body>
+    <h1>Classification Result</h1>
+    {% if result %}
+        <p>The uploaded image belongs to the category: {{ result }}</p>
+    {% else %}
+        <p>Error: Unable to classify the image.</p>
+    {% endif %}
+    <a href="/">Upload Another Image</a>
+</body>
+</html>
